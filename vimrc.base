@@ -1,0 +1,53 @@
+"===================== Base Config =============================
+set nocompatible "不兼容vi命令 
+filetype indent on "开启文件类型检查，并且载入与该类型对应的缩进规则
+syntax on "语法高亮
+set mouse=a "启用鼠标
+set showmode "状态栏显示当前模式
+set showcmd "状态栏显示当前命令
+set ruler "状态栏显示当前光标位置
+set laststatus=2 "底部状态栏设置 0始终不显示 1打开多个文件时显示 2始终显示
+set encoding=utf-8 "文件编码
+set number "显示行号 
+set cursorline "当前行高亮
+set textwidth=100 "每行最大字符数
+set wrap "自动折行 
+set linebreak "自动折行只在特殊字符(空格/连字符/符号) 
+set scrolloff=5 "上下滚动光标距离顶/底部的行数
+set sidescrolloff=10 "左右滚动光标距离行首/尾部的字符数
+set tabstop=4 "tab显示的字符数 
+set softtabstop=4 "tab自动转换的空格字符数
+set shiftwidth=4 "执行位移操作<</>>显示的字符数
+set expandtab "将tab替换为相应数量空格 
+set autoindent "自动缩进
+
+"===================== Search Config =============================
+set showmatch "光标遇到{[()]}时，会高亮显示另一半匹配的符号新的
+set hlsearch "高亮显示搜索的内容
+set incsearch "增量搜索，即每输入一个字符都会匹配
+set ignorecase "搜索时忽略大小写
+set smartcase "如果打开了ignorecase，只有一个大写字母的搜索词大小写敏感；其他都是大小写不敏感
+
+"===================== Edit Config =============================
+set noswapfile "不创建交换文件。文件名的开头是.、结尾是.swp
+set autochdir "自动切换工作目录
+set noerrorbells "出错时，不要发出响声
+set visualbell "出错时，发出视觉提示，通常是屏幕闪烁
+set autoread "打开文件监视。如果在编辑过程中文件发生外部改变，就会发出提示
+set wildmenu "命令模式下，底部操作指令按下 Tab 键自动补全
+
+"set backspace=2 "可随时用倒退键删除 
+"set bg=dark "显示不同的底色色调 
+"set smartindent
+
+"===================== Keybord Map =============================
+"键盘映射模式
+"map : 正常模式，可视化模式和运算符模式可用
+"nmap ：正常模式可用
+"vmap ：可视化模式可用
+"omap ：运算符模式可用
+"map! ：插入模式和命令行模式可用
+"imap ：插入模式可用
+"cmap ：命令行模式可用
+map ss :source ~/.vimrc <cr>
+map ee :e ~/.vimrc <cr>

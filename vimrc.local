@@ -1,0 +1,16 @@
+set cc=120
+set foldmethod=syntax
+set foldlevelstart=9999 "折叠初始的层级，9999=不折叠
+map ee :e ~/.vimrc<CR>
+map rs :source ~/.vimrc<CR>
+map rr :NERDTreeToggle<CR>
+map ss :w<CR>
+map <SPACE> za
+
+imap <C-f> <RIGHT>
+imap <C-s> <LEFT>
+imap <C-e> <UP>
+imap <C-d> <DOWN>
+"imap <C-k> <DELETE>
+
+
